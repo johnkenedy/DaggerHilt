@@ -4,8 +4,9 @@ import android.app.Application
 import com.example.daggerhilt.R
 import com.example.daggerhilt.data.remote.MyApi
 import com.example.daggerhilt.domain.repository.MyRepository
+import javax.inject.Inject
 
-class MyRepositoryImpl(
+class MyRepositoryImpl @Inject constructor(
     private val api: MyApi,
     private val appContext: Application
 ) : MyRepository {

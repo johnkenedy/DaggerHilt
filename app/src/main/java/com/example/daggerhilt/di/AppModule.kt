@@ -27,16 +27,6 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideMyRepository(
-        api: MyApi,
-        app: Application,
-        @Named("hello") hello: String
-    ): MyRepository {
-        return MyRepositoryImpl(api, app)
-    }
-
-    @Provides
-    @Singleton
     @Named("hello")
     fun provideString() = "Hello there!"
 
