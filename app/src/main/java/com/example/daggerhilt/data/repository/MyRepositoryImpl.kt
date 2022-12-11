@@ -8,6 +8,5 @@ class MyRepositoryImpl(
 ) : MyRepository {
 
     override suspend fun doNetworkCall() {
-        TODO("Not yet implemented")
     }
 }
